@@ -1,7 +1,7 @@
 <?php
 $login = $_POST['login'];
 $senha = $_POST['senha'];
-$conn = mysqli_connect('localhost', 'root', 'teste', 'login');
+$conn = mysqli_connect('localhost', 'phpmyadmin', 'teste', 'login');
 if (isset($login) && isset($senha)) {
     $verifica = mysqli_query($conn, "SELECT * FROM users WHERE name =
  '$login' AND pass = '$senha'");
